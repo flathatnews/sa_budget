@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<meta charset="UTF-8">
+
+<!-- Load d3.js-->
+<script src="http://d3js.org/d3.v4.js"></script>
+
+<!--Color palette -->
+<script src="https://d3js.org/d3-scale-chromatic.v1.min.js"></script>
+
+<link href="https://fonts.googleapis.com/css?family=Aldrich|Arima+Madurai|Arvo|Henny+Penny|Indie+Flower|Libre+Baskerville|Pirata+One|Poiret+One|Sancreek|Satisfy|Share+Tech+Mono|Smokum|Snowburst+One|Special+Elite" rel="stylesheet">
+
+
+<!-- Create a div where the graph will take place-->
+<div id="my_dataviz"></div>
+
+
+<style>
+.node:hover{
+    stroke-width: 4px !important;
+    opacity: 1 !important;
+}
+</style>
+
+
+<script>
+
+// set the dimensions and margins of the graph
+var width = 1600
+var height = 600
+
+//append the svg object to the body of the page
+var svg = d3.select('#my_dataviz')
+    .append("svg")
+        .attr("width", width)
+        .attr("height", height)
+
+
+//d3.csv("https://raw.githubusercontent.com/holtzy/data_to_viz/master/Example_dataset/11_SevCatOneNumNestedOneObsPerGroup.csv", function(data) {
+d3.csv("sa_budget_v5.csv", function(data) {
+
+
+    // filter a bit the data -> more than 1 million inhabitants
+    //data = data.filter(function(d){return d.value>10000000})
+
+    //Color palette for groups
+    var color = d3.scaleOrdinal()
+        .domain(["Steer Clear", "Religious", "Improv", "Media", "Greek", "Health", "Acapella", "Recreation", "Academic/Professional", "Advocacy & Inclusion", "General Club", "Service", "Cultural", "Student Assembly (Main Item)", "Media Council", "Alma Mater Productions","Student Assembly"])
+        //.range(d3.schemeCategory20);
+       //.range([d3.rgb("#E377C2"), d3.rgb("#7F7F7F"), d3.rgb("#17BECF"), d3.rgb(" #9EDAE5"), d3.rgb('#FFF500')]);
+       .range([d3.rgb("#e377c2"), d3.rgb("#7f7f7f"), d3.rgb("#17becf"), d3.rgb("#9edae5"), d3.rgb("#bcbd22"), d3.rgb("#dbdb8d"), d3.rgb("#aec7e8"), d3.rgb("#ff9896"), d3.rgb("#1f77b4"), d3.rgb("#ff7f0e"), d3.rgb("#98df8a"), d3.rgb("#c7c7c7"), d3.rgb("#2ca02c"), d3.rgb("#f7b6d2"), d3.rgb("#d62728"), d3.rgb("#ffbb78"), d3.rgb("#f7b6d2")]);
+
+    //Size scale for approved amounts
+    var size = d3.scaleLinear()
+        .domain([0, 98670])
+        .range([8,100]) //circle will be between 7 and 55 px wide
+
+    var x = d3.scaleOrdinal()
+        .domain(["Steer Clear", "Religious", "Improv", "Media", "Greek", "Health", "Acapella", "Recreation", "Academic/Professional", "Advocacy & Inclusion", "General Club", "Service", "Cultural", "Student Assembly (Main Item)", "Media Council", "Alma Mater Productions","Student Assembly"])
+        .range([0, 40, 80, 120, 160, 200, 240, 315, 390, 465, 540, 615, 700, 790, 920, 1100, 1300])
+
+    //var y = d3.scaleOrdinal()
+        //.domain(["academic/professional", "acapella", "advocacy", "amp", "club", "cultural", "greek", "health", "improv", "media", "recreation", "religious", "steer clear"])
+        //.range([50, 200, 340, 500])
+
+    //create a tooltip
+    var Tooltip = d3.select("#my_dataviz")
+        .append("div")
+        .style("opacity", 0)
+        .attr("class", "tooltip")
+        .style("background-color", "white")
+        .style("border", "solid")
+        .style("border-width", "1px")
+        .style("border-radius", "5px")
+        .style("padding", "5px")
+        .style("font-family", "Arvo")
+        .style("position", 'absolute')
+
+    // Three function that change the tooltip when user hover/move/leave a cell
+    var mouseover = function(d) {
+        Tooltip
+            .style("opacity", 1)
+    }
+    var mousemove = function(d){
+        Tooltip
+            .html("<b>Group: " + "</b>" + d.group + "<br>" + "<b>Group Type: " + "</b>" + d.group_type + "<br>" + "<b>Amount Allocated: $" + "</b>" + d.approved)
+            .style("left", (d3.mouse(this)[0]+20) + "px")
+            .style("top", (d3.mouse(this)[1]) + "px")
+    }
+    var mouseleave = function(d) {
+        Tooltip
+            .style("opacity", 0)
+    }
+
+    //Initialize the circle: all located at the center of the svg area
+    var node = svg.append("g")
+        .selectAll("circle")
+        .data(data)
+        .enter()
+        .append("circle")
+            .attr("class", "node")
+            .attr("r", function(d){return size(d.approved)})
+            .attr("cx", width/2)
+            .attr("cy", height/2)
+            .style("fill", function(d){return color(d.group_type)})
+            .style("fill-opacity", 0.8)
+            .attr("stroke", "black")
+            .style("stroke-width", 1)
+            .on("mouseover", mouseover) //what to do when hovered		
+            .on("mousemove", mousemove)
+            .on("mouseleave", mouseleave)
+            .call(d3.drag() //call specific function when circle is dragged
+            .on("start", dragstarted)
+            .on("drag", dragged)
+            .on("end", dragended));
+        
+    //Features of the forces applied to the nodes:
+    var simulation = d3.forceSimulation()
+        .force("x", d3.forceX().strength(.5).x( function(d){ return x(d.group_type) } ))
+        .force("y", d3.forceY().strength(0.1).y( height/2 ))
+        .force("center", d3.forceCenter().x(700).y(height/2)) //attraction to the center of the svg area
+        .force("charge", d3.forceManyBody().strength(1)) //nodes are attracted one each other of value is > 0
+        //.force("collide", d3.forceCollide().strength(.2).radius(function(d){return (size(d.approved) + 3)}).iterations(1)) //Force that avoids circle overlapping
+        .force("collide", d3.forceCollide().strength(.1).radius(function(d){return (size(d.approved) + 3)}).iterations(1)) //Force that avoids circle overlapping
+
+    //Apply these forces to the nodes and update their positions
+    //once the algorithm is happy with positions ('alpha' value is low enough), simulations will stop.
+    simulation
+        .nodes(data)
+        .on("tick", function(d){
+            node
+                .attr("cx", function(d){return d.x; })
+                .attr("cy", function(d){return d.y; })
+        });
+
+    //What happens when a circle is dragged?
+    function dragstarted(d) {
+        if (!d3.event.active) simulation.alphaTarget(.03).restart();
+        d.fx = d.x;
+        d.fy = d.y;
+    }
+    function dragged(d) {
+        d.fx = d3.event.x;
+        d.fy = d3.event.y;
+    }
+    function dragended(d) {
+        if (!d3.event.active) simulation.alphaTarget(.03);
+        d.fx = null;
+        d.fy = null;
+    }
+
+})
+
+
+</script>

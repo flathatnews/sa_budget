@@ -1,0 +1,172 @@
+,group_type,group,denied,requested,approved,percent_of_budget
+0,Academic/Professional,Active Minds,0,47,47,0.006139738
+1,Academic/Professional,Classics Club,12,57,45,5.87847E-05
+2,Academic/Professional,Public Health Journal Club,50,84,34,4.44151E-05
+3,Academic/Professional,Biology Club,150,170,20,2.61265E-05
+4,Academic/Professional,Sports Business Club,260,315,55,7.1848E-05
+5,Academic/Professional,Medical Health and Outreach Club,100,570,470,0.000613974
+6,Academic/Professional,Kinesiology and Health Science Majors Club,400,597,197,0.000257346
+7,Academic/Professional,The Collective: Sociology Journal at W&M,100,847,747,0.000975826
+8,Academic/Professional,Society of Physics Students,335,942,607,0.000792941
+9,Academic/Professional,International Relations Club,1010,1540,530,0.000692353
+10,Academic/Professional,Students for Advancement of Artificial Intelligence,0,1547,1547,0.002020888
+11,Academic/Professional,Quiz Bowl,912,1947,1035,0.001352049
+12,Academic/Professional,Art History Club,1650,2125,475,0.000620505
+13,Academic/Professional,Moot Court,1709,2922,1213,0.001584575
+14,Academic/Professional,Mock Trial,1464,3245,1781,0.002326569
+15,Academic/Professional,Association for Computing Machinery,1250,3547,2297,0.003000634
+16,Academic/Professional,Debate Society,4315,7027,2712,0.003542759
+17,Acapella,No Ceiling,0,20,20,2.61265E-05
+18,Acapella,The Accidentals,500,520,20,2.61265E-05
+19,Acapella,FLOW,600,667,67,8.75239E-05
+20,Acapella,A Capella Council,1070,2431,1361,0.001777911
+21,Advocacy & Inclusion,HEART,45,124,79,0.0001032
+22,Advocacy & Inclusion,Virginia21,100,197,97,0.000126714
+23,Advocacy & Inclusion,Students for Animals,120,234,114,0.000148921
+24,Advocacy & Inclusion,American Bosnian Collaboration Project,200,247,47,6.13974E-05
+25,Advocacy & Inclusion,Amnesty International,80,515,435,0.000568252
+26,Advocacy & Inclusion,Students Helping Honduras,635,987,352,0.000459827
+27,Advocacy & Inclusion,IMRAA,836,1047,211,0.000275635
+28,Advocacy & Inclusion,Student Veterans of W&M,1418,1687,269,0.000351402
+29,Advocacy & Inclusion,One for the World at W&M,2200,2247,47,6.13974E-05
+30,Advocacy & Inclusion,Students Demand Action,2367,3404,1037,0.001354661
+31,Advocacy & Inclusion,Student Environmental Action Coalition,3130,4407,1277,0.00166818
+32,Advocacy & Inclusion,UndocuTribe,4025,5200,1175,0.001534934
+33,General Club,Knitting Club,0,70,70,9.14429E-05
+34,General Club,Wizards & Muggles,0,118,118,0.000154147
+35,General Club,Blacksmithing Guild,125,145,20,2.61265E-05
+36,General Club,Tabletop Roleplaying Games,0,170,171,0.000223382
+37,General Club,Campus Cursive at William & Mary,0,205,206,0.000269103
+38,General Club,Pershing Rifles/ Queen's Guard,0,227,227,0.000296536
+39,General Club,Game Design Club,300,320,20,2.61265E-05
+40,General Club,College Company of William & Mary,9,331,322,0.000420637
+41,General Club,Tribe Scribes,0,344,352,0.000459827
+42,General Club,Electronic Dance Music Club,0,427,427,0.000557802
+43,General Club,Smash Club,514,514,0,0
+44,General Club,Salsa Club,109,675,566,0.000739381
+45,General Club,Science Fiction & Fantasy Club,0,800,800,0.001045062
+46,General Club,Chess Club,349,890,541,0.000706723
+47,General Club,Swing Dance Club,1000,1217,217,0.000283473
+48,General Club,The Griffin Fechtschule,340,1250,910,0.001188758
+49,General Club,Metal Club,650,1270,620,0.000809923
+50,General Club,Front Porch Society,1370,2102,732,0.000956232
+51,Cultural,ESSENCE Women of Color,60,140,80,0.000104506
+52,Cultural,Chinese Student Organization,54,162,108,0.000141083
+53,Cultural,Middle Eastern Student Association,0,184,184,0.000240364
+54,Cultural,Haasya,340,482,142,0.000185498
+55,Cultural,European Horizons,570,654,84,0.000109731
+56,Cultural,Korean Language Club,195,692,497,0.000649245
+57,Cultural,KASA,355,697,342,0.000446764
+58,Cultural,Japanese Cultural Assocation,250,776,526,0.000687128
+59,Cultural,Black Student Organization of William & Mary,420,801,381,0.000497711
+60,Cultural,Taiwanese American Student Association,370,1195,825,0.00107772
+61,Cultural,African Cultural Society,810,1967,1157,0.001511421
+62,Cultural,Latin American Student Union,890,2504,1614,0.002108412
+63,Cultural,Muslim Student Association,1108,3536,2428,0.003171762
+64,Cultural,Afsana,2669,4072,1403,0.001832777
+65,Cultural,Filipino Amerrican Student Association,3450,5142,1692,0.002210306
+66,Cultural,Asian American Student Initiative,11125,11397,272,0.000355321
+67,Cultural,South Asian Student Association,7015,13112,6097,0.007964677
+68,Cultural,Griffin Bhangra,12945,13765,820,0.001071188
+69,Greek,Alpha Phi Omega,0,250,250,0.000326582
+70,Greek,Alpha Kappa Psi,1175,1252,77,0.000100587
+71,Greek,Nu Kappa Epsilon,2832,3665,833,0.001088171
+72,Health,VOX,50,397,347,0.000453296
+73,Health,HOPE,858,1134,276,0.000360546
+74,Health,Someone You Know,49,1887,1838,0.002401029
+75,Improv,Trippin' on Brix,286,400,114,0.000148921
+76,Improv,Dad Jeans Improv,525,668,143,0.000186805
+77,Media,Podcasting Network at William & Mary,0,247,247,0.000322663
+78,Media,Spoon University,235,622,387,0.000505549
+79,Media Council,Acropolis,0,"3,325",3325,0.004343538
+80,Media Council,Bill of Rights,0,"13,119",13119,0.017137706
+81,Media Council,Botetourt Squat,0,"2,000",2000,0.002612654
+82,Media Council,Colonial Echo ,0,"26,275",26275,0.034323747
+83,Media Council,Dog Street,0,"8,722",8722,0.011393786
+84,Media Council,Env Law,0,"12,857",12857,0.016795449
+85,Media Council,Flat Hat,629,"21,678",21049,0.027496881
+86,Media Council,Gallery,0,"5,955",5955,0.007779178
+87,Media Council,James Blair Historical Review,0,"1,595",1595,0.002083592
+88,Media Council,Journal of Women,0,"9,776",9776,0.012770655
+89,Media Council,Monitor,100,"4,382",4282,0.005593693
+90,Media Council,Rocket,"1,000","8,896",7896,0.01031476
+91,Media Council,W & M Review ,0,"5,448",5448,0.007116871
+92,Media Council,Winged Nation,0,"4,357",4379,0.005720407
+93,Media Council,WCWM,925,"21,667",20742,0.027095839
+94,Media Council,WMTV,0,650,650,0.000849113
+95,Media Council,W&M  Business Law Review,0,"9,947",9947,0.012994037
+96,Media Council,W&M Educational Review,0,"3,084",3084,0.004028713
+97,Media Council,W&M Policy Review,0,"3,749",3749,0.004897421
+98,Media Council,Underground @WM,0,"2,335",2335,0.003050274
+99,Advocacy & Inclusion,Minority Pre-Law Association ($50 was allocated from the AMP Collaborative Concert Fund for a networking social),120,252,182,0.000237752
+100,Advocacy & Inclusion,National Organization for the Professional Advancement of Black Chemists and Chemical Engineers,350,397,47,6.13974E-05
+101,Advocacy & Inclusion,Lambda Alliance,74,409,335,0.00043762
+102,Advocacy & Inclusion,She's the First,283,717,434,0.000566946
+103,Advocacy & Inclusion,Minorities in Medicine,280,1105,825,0.00107772
+104,Advocacy & Inclusion,Society of Women in Computing,965,1164,199,0.000259959
+105,Advocacy & Inclusion,NAACP,1420,1494,74,9.66682E-05
+,Advocacy & Inclusion,Neurodiversity,0,167,167,0.000218157
+106,Advocacy & Inclusion,Rainbow Coalition,1244,3300,2056,0.002685809
+107,Recreation,Coast Guard Auxiliary Until at William & Mary,0,197,197,0.000257346
+108,Recreation,William & Mary Pep Band,0,287,287,0.000374916
+109,Recreation,Syndicate Hip Hop Dance Team,659,840,181,0.000236445
+110,Recreation,Team Blitz,0,1200,1200,0.001567593
+111,Recreation,Figure Skating Club,2384,2607,223,0.000291311
+112,Recreation,Archery Team,1380,2777,1397,0.001824939
+113,Religious,Agape Christian Fellowship,280,327,47,6.13974E-05
+114,Religious,InterVarsity Christian Fellowship,211,1386,1175,0.001534934
+115,Service,28 Mentoring,0,20,20,2.61265E-05
+116,Service,30 Mentoring,0,20,75,9.79745E-05
+117,Service,27 Mentoring,0,27,27,3.52708E-05
+118,Service,29 Mentoring,0,40,40,5.22531E-05
+119,Service,Commonwealth Covered,25,147,122,0.000159372
+120,Service,CPALs,35,177,142,0.000185498
+121,Service,Merrimac Mentors,97,192,95,0.000124101
+122,Service,College Red Cross,150,256,106,0.000138471
+123,Service,Campus Buddies,0,282,282,0.000368384
+124,Service,Circle K International,170,291,121,0.000158066
+125,Service,UNICEF at W&M,167,296,129,0.000168516
+126,Service,Global Medical Brigades,0,600,600,0.000783796
+127,Service,Lafayette Kids,20,789,769,0.001004566
+128,Service,Best Buddies,1442,1896,454,0.000593073
+129,Service,TribeTHON,1724,2896,1172,0.001531015
+130,Service,Branch Out Alternative Breaks,3648,8597,4949,0.006465013
+131,Steer Clear,Steer Clear,0,14397,14397,0.018807193
+132,Student Assembly,Class of 2020,500,5096,4596,0.00600388
+133,Student Assembly,Class of 2021,0,500,500,0.000653164
+134,Student Assembly,Class of 2022,0,500,500,0.000653164
+135,Student Assembly,Class of 2023,0,500,500,0.000653164
+136,Student Assembly,GEA,0,9065,9065,0.011841856
+137,Student Assembly,GSA,0,7350,7350,0.009601505
+138,Student Assembly,Graduate Student Council,7438,19975,12537,0.016377424
+139,Student Assembly,MBA,0,15680,15680,0.02048321
+140,Student Assembly,Macc,0,4067,4067,0.005312833
+141,Student Assembly,SBA,0,31262,31262,0.040838401
+142,Student Assembly,Conference Fund,0,30000,30000,0.039189816
+143,Student Assembly,Activities & Event Fund,0,40000,40000,0.052253088
+144,Student Assembly,Miscellaneous,0,98670,98670,0.128895304
+145,Student Assembly,Activities Fee Operations,0,9215,9215,0.012037805
+146,Alma Mater Productions,"Collaborative Concert Fund (Granted additional $3949 than originally requested) ($10,000 was moved from the AMP CC Fund to the SA CC Fund)",0,25000,38949,0.050880138
+147,Alma Mater Productions,Charter Day Fund Production,1000,5000,4000,0.005225309
+148,Alma Mater Productions,Comedian Fund Booking Fee,0,20000,20000,0.026126544
+149,Alma Mater Productions,Concert Fund (Granted extra $5000 than originally requested),0,65000,70000,0.091442904
+150,Alma Mater Productions,LDOC Vendor Fees,2000,5000,3000,0.003918982
+151,Alma Mater Productions,Opening Weekend Movie Rights,0,2000,2000,0.002612654
+152,Alma Mater Productions,Opening Weekend Inflatable Screen Rental,500,2000,1500,0.001959491
+153,Alma Mater Productions,Speaker Fund,375,17500,17125,0.022370853
+154,Alma Mater Productions,Variety Act Booking ,0,1500,1500,0.001959491
+155,Student Assembly (Main Item),Orientation Dance DJ,0,275,275,0.00035924
+156,Student Assembly (Main Item),Seasonal Flu Vaccines,0,12000,12000,0.015675926
+157,Student Assembly (Main Item),SWEM Open Fall Semester,0,4300,4300,0.005617207
+158,Student Assembly (Main Item),Swem Open Spring Semester,0,4300,4300,0.005617207
+159,Student Assembly (Main Item),"Airport Shuttles - Fall, Thanksgiving & Spring Breaks",10000,20000,10000,0.013063272
+160,Student Assembly (Main Item),King and Queen Ball,0,9000,9000,0.011756945
+161,Student Assembly (Main Item),STI Testing,6000,16000,10000,0.013063272
+162,Student Assembly (Main Item),Busch Gardens Day,0,2000,2000,0.002612654
+163,Student Assembly (Main Item),Charter Day,15000,15000,0,0
+164,Student Assembly (Main Item),Van Training,0,2000,2000,0.002612654
+165,Student Assembly (Main Item),Exam Blue Books,0,8000,8000,0.010450618
+166,Student Assembly (Main Item),Spring Concert (collaborative),20000,50000,30000,0.039189816
+167,Student Assembly (Main Item),Tribe Tailgates,5000,5000,0,0
+168,Student Assembly (Main Item),Period Project,0,2000,2000,0.002612654
+169,Student Assembly (Main Item),Office Operations,125,125,0,0
